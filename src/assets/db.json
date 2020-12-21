@@ -1,0 +1,138 @@
+{
+  "folders": [
+    {
+      "id": 1,
+      "text": "Фильмы"
+    },
+    {
+      "id": 2,
+      "text": "Сериалыыыыыыыыыыыыыыыыыыыыы"
+    },
+    {
+      "id": 3,
+      "text": "Книги"
+    },
+    {
+      "id": 4,
+      "text": "Покупки"
+    },
+    {
+      "id": 5,
+      "text": "Домашка"
+    },
+    {
+      "text": "test",
+      "id": 6
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "folderId": 1,
+      "text": "Джанго освобожденный",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "folderId": 1,
+      "text": "Славные парни",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "folderId": 1,
+      "text": "Банды Нью-Йорка",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "folderId": 2,
+      "text": "Во все тяжкие",
+      "completed": true
+    },
+    {
+      "id": 5,
+      "folderId": 3,
+      "text": "1984",
+      "completed": true
+    },
+    {
+      "id": 6,
+      "folderId": 3,
+      "text": "Заводной апельсин",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "folderId": 4,
+      "text": "Молоко",
+      "completed": false
+    },
+    {
+      "id": 8,
+      "folderId": 4,
+      "text": "Хлеб",
+      "completed": false
+    },
+    {
+      "id": 9,
+      "folderId": 4,
+      "text": "Масло",
+      "completed": false
+    },
+    {
+      "id": 10,
+      "folderId": 4,
+      "text": "Сыр",
+      "completed": false
+    },
+    {
+      "id": 11,
+      "folderId": 4,
+      "text": "Колбаса",
+      "completed": true
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#debea0"
+    },
+    {
+      "id": 2,
+      "hex": "#f5b6b9"
+    },
+    {
+      "id": 3,
+      "hex": "#d79551"
+    },
+    {
+      "id": 4,
+      "hex": "#01ae9b"
+    },
+    {
+      "id": 5,
+      "hex": "#a4545f"
+    },
+    {
+      "id": 6,
+      "hex": "#695883"
+    },
+    {
+      "id": 7,
+      "hex": "#fd82b1"
+    },
+    {
+      "id": 8,
+      "hex": "#b40129"
+    },
+    {
+      "id": 9,
+      "hex": "#7cbdc9"
+    },
+    {
+      "id": 10,
+      "hex": "#eaf8ab"
+    }
+  ]
+}

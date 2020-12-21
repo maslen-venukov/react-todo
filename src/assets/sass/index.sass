@@ -1,0 +1,194 @@
+@import 'normalize'
+@import 'reset'
+
+html,
+body
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-size: 14px
+  line-height: 1.2
+  overflow-x: hidden
+
+.wrapper 
+  width: 100vw
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #FAACA8
+  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%)
+  padding: 0 20px
+
+.todo
+  display: flex
+  width: 700px
+  height: 500px
+  border-radius: 5px
+  overflow: hidden
+
+.sidebar 
+  width: 25%
+  height: 100%
+  padding: 20px
+  background-color: #e2ddf1
+  overflow-y: auto
+
+.main
+  width: 75%
+  height: 100%
+  padding: 20px
+  background-color: #fff
+  overflow-y: auto
+
+.title
+  position: relative
+  font-size: 20px
+  color: #404040
+  padding-left: 20px
+  margin-bottom: 20px
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    width: 15px
+    height: 15px
+  &--folders
+    cursor: pointer
+    &::before
+      bottom: 2px
+      background: url(../img/folder.svg) center / contain no-repeat
+  &--tasks
+    &::before
+      bottom: 3px
+      background: url(../img/task.svg) center / contain no-repeat
+
+.folders
+  margin-bottom: 20px
+  &__item
+    position: relative
+    line-height: 30px
+    height: 30px
+    border-radius: 5px
+    padding: 0 24px 0 12px
+    transition: background-color .2s, box-shadow .2s
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    &:not(:last-child)
+      margin-bottom: 5px
+    &:hover,
+    &:focus,
+    &.active
+      background-color: #fff
+      box-shadow: 0 6px 10px rgba(#000, .05)
+      cursor: pointer
+      &::before
+        opacity: 1
+      .folders__marker,
+      .folders__remove
+        opacity: 1
+        visibility: visible
+    &:active
+      transform: translateY(1px)
+  &__marker
+    position: absolute
+    top: 0
+    left: 0
+    width: 6px
+    height: 100%
+    opacity: 0
+    visibility: hidden
+    transition: opacity .2s, visibility .2s, background-color .2s
+  &__remove
+    position: absolute
+    top: 50%
+    right: 10px
+    transform: translateY(-50%)
+    width: 10px
+    height: 10px
+    background: url(../img/cross.svg) center / cover no-repeat
+    opacity: 0
+    visibility: hidden
+    transition: opacity .2s, visibility .2s
+
+.tasks
+  margin-bottom: 12px
+  &__title
+    font-size: 18px
+    font-weight: 600
+    color: #404040
+    margin-bottom: 12px
+  &__item
+    &:not(:last-child)
+      margin-bottom: 8px
+  &__checkbox
+    display: none
+  &__checkbox ~ .tasks__label
+    svg
+      width: 18px
+      height: 18px
+      fill: #b1b1b1
+  &__checkbox:checked ~ .tasks__label
+    svg
+      fill: #7cbdc9
+  &__label
+    display: flex
+    align-items: center
+    cursor: pointer
+    svg
+      margin-right: 8px
+    &:active
+      svg
+        transform: translateY(1px)
+
+.add-btn
+  position: relative
+  color: #767676
+  background-color: transparent
+  padding-left: 15px
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    width: 10px
+    height: 10px
+    background: url(../img/plus.svg) center / cover no-repeat
+  &:active
+    transform: translateY(1px)
+  &--folders
+    margin-bottom: 10px
+
+.select-folder
+  display: block
+  margin-bottom: 10px
+
+.popup
+  background-color: #fff
+  box-shadow: 0 3px 15px rgba(#000, 0.15)
+  border-radius: 5px
+  padding: 10px
+  &--tasks
+    width: 250px
+    border-radius: 10px
+    padding: 15px
+    .popup__input
+      height: 30px
+      border-radius: 4px
+      padding: 8px
+      margin-bottom: 12px
+  &__input
+    width: 100%
+    height: 25px
+    border: 1px solid #c9c9c9
+    border-radius: 3px
+    padding: 5px
+    margin-bottom: 8px
+  &__add
+    width: 100%
+    height: 30px
+    color: #fff
+    border-radius: 3px
+    background-color: #7cbdc9
+    &:active
+      transform: translateY(1px)
