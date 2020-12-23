@@ -23,6 +23,10 @@
     {
       "text": "test",
       "id": 6
+    },
+    {
+      "text": "1241463",
+      "id": 7
     }
   ],
   "tasks": [
@@ -36,7 +40,7 @@
       "id": 2,
       "folderId": 1,
       "text": "Славные парни",
-      "completed": true
+      "completed": false
     },
     {
       "id": 3,
@@ -66,7 +70,7 @@
       "id": 7,
       "folderId": 4,
       "text": "Молоко",
-      "completed": false
+      "completed": true
     },
     {
       "id": 8,
@@ -78,19 +82,25 @@
       "id": 9,
       "folderId": 4,
       "text": "Масло",
-      "completed": false
+      "completed": true
     },
     {
       "id": 10,
       "folderId": 4,
       "text": "Сыр",
-      "completed": false
+      "completed": true
     },
     {
       "id": 11,
       "folderId": 4,
       "text": "Колбаса",
-      "completed": true
+      "completed": false
+    },
+    {
+      "folderId": 6,
+      "text": "Тестовый таск",
+      "completed": true,
+      "id": 14
     }
   ],
   "colors": [

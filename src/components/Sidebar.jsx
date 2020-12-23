@@ -27,6 +27,7 @@ const Sidebar = ({ activeFolder, setActiveFolder }) => {
   const onFolderClick = id => {
     setActiveFolder(id);
     history.push('/folders/' + id);
+    setPopupOpen(false);
   };
 
   const onResetFolder = () => {
